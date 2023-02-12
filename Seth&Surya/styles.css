@@ -20,21 +20,34 @@
   
   .movie-card {
     padding: 20px;
-    border: 1px solid #ccc;
     border-radius: 10px;
     text-align: center;
+    background-image: url(Seth&Surya/The_Shawshank_Redemption_pôster.png);
+    background-size: cover;
+    background-position: center;
+    background-blur: 10px;
+    background-color: rgba(255, 255, 255, 0.8);
+    height: 450px;
   }
   
   h2 {
     font-size: 24px;
     margin-bottom: 10px;
+    color: #333;
+    text-shadow: 1px 1px #fff;
   }
   
   p {
     font-size: 18px;
     margin-bottom: 10px;
+    color: #333;
+    text-shadow: 1px 1px #fff;
   }
   
   .rotten-tomatoes-rating {
-    font-size: 20px
+    font-size: 20px;
+    font-weight: bold;
+    color: green;
+    text-shadow: 1px 1px #fff;
+  }
   
