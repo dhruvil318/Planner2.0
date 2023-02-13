@@ -10,7 +10,7 @@
 </head>
 <body>
     <header>
-        <div class="navbar">
+        <nav>
             <!-- Logo -->
             <a href="index.html">
               <img src="South-Florida-Bulls-Logo.png" style="width: 50px;" alt="Logo">
@@ -18,10 +18,10 @@
             
             <!-- Navbar items -->
             <div class="nav_pages">
-              <a href="#">Degreeworks</a>
-              <a href="https://www.usf.edu/" target="_blank">USF Home</a>
+              <a href="index.html">Home</a>
+              <a href="flowchart.html">Flowchart</a>
+              <a href="https://www.usf.edu/" target="_blank">USF</a>
               <a href="https://www.ratemyprofessors.com/school?sid=1262" target="_blank"  >Rate My Professor</a>
-              <a href="#">Advanced Search</a>
             </div>
             <button id="btn" type="button" onclick="toggleCSS()">Toggle Style</button>
             <div class="dropdown">
@@ -33,39 +33,92 @@
                   <a href="index.html" class="dropdown-item">Spanish</a>
                 </div>
               </div>
+        </nav>
       </header>
       
     <main>
         <div style="display:flex">
             <!-- list of classes -->
+            <div class="welcome">
+                <p>Welcome to your schedule planner, Rocky.</p>
+            </div>
             <div>
                 <h1>Classes</h1><br>
                 <ul>
                     <li>CGS 3853</li>
                     <li>COP 4703</li>
                     <li>CIS 3433</li>
+                    <li>CDA 3333</li>
                 </ul>
             </div>
 
             <!-- calendar of classes -->
             <div>
                 <h1>Schedule</h1>
-                <table>
+                <table border = 8> 
                     <tr>
-                        <td></td>
-                        <td>Course</td>
+                        <td>Time</td>
+                        <td>M</td>
+                        <td>T</td>
+                        <td>W</td>
+                        <td>TH</td>
+                        <td>F</td>
                     </tr>
                     <tr>
                         <td>11:00</td>
-                        <td>CGS 3853</td>
+                        <td></td>
+                        <td>COP 4538</td>
+                        <td></td>
+                        <td>COP 4538</td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>12:00</td>
                         <td>COP 4703</td>
+                        <td></td>
+                        <td>COP 4703</td>
+                        <td></td>
+                        <td></td>
                     </tr>
                     <tr>
                         <td>1:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>2:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
                         <td>CIS 3433</td>
+                    </tr>
+                    <tr>
+                        <td>3:00</td>
+                        <td></td>
+                        <td>CGS 3853</td>
+                        <td></td>
+                        <td>CGS 3853</td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>4:00</td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td>5:00</td>
+                        <td>CDA 3333</td>
+                        <td></td>
+                        <td>CDA 3333</td>
+                        <td></td>
+                        <td></td>
                     </tr>
                     
                 </table>
@@ -76,7 +129,7 @@
     </main>
     <footer>
         <p>
-            &copy; Presented by Group X
+            <b>&copy; Presented by Dhruvil, Seth, Surya, and Aryan.</b>
         </p>
     </footer>
 </body>
