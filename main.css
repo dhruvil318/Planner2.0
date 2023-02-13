@@ -12,8 +12,12 @@ nav {
   color: #fff;
 }
 
+.nav_pages > a{
+  color: #fff;
+}
+
 .nav_pages>a:hover {
-  background-color: #4f4f4f;
+  background-color: #00673e;
 }
 
 /* Navbar items */
@@ -60,15 +64,13 @@ nav {
 
 /* Default icons */
 .icon {
-  width: 20px;
-  height: 20px;
   margin-left: 20px;
   fill: #fff;
 }
 
 
 #usf-logo {
-  width: 200px;
+  width: 150px;
 }
 
 .welcome {
@@ -84,4 +86,8 @@ nav {
 
 #classlist{
   
+
+}
+#flowchart {
+  width: 200px;
 }
