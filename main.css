@@ -12,8 +12,12 @@ nav {
   color: #fff;
 }
 
+.nav_pages > a{
+  color: #fff;
+}
+
 .nav_pages>a:hover {
-  background-color: #4f4f4f;
+  background-color: #00673e;
 }
 
 /* Navbar items */
