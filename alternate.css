@@ -71,3 +71,16 @@ body {
 #usf-logo {
     width: 200px;
 }
+
+.welcome {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    animation: invis 3s ease-in-out normal;
+  }
+  
+  @keyframes invis{
+    0% {color:white}
+    100% {color:#005432}
+  }
