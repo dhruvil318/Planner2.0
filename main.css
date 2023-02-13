@@ -60,19 +60,21 @@ nav {
 
 /* Default icons */
 .icon {
-  width: 20px;
-  height: 20px;
   margin-left: 20px;
   fill: #fff;
 }
 
 
 #usf-logo {
-  width: 200px;
+  width: 150px;
 }
 
 .welcome {
   font-family: Arial, Helvetica, sans-serif;
   font-weight: bold;
   text-align: center;
+}
+
+#flowchart {
+  width: 200px;
 }
