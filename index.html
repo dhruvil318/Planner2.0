@@ -10,29 +10,28 @@
 </head>
 <body>
     <header>
-        <nav>
-          <ul>
-            <li><a href="index.html"><img src="South-Florida-Bulls-Logo.png" style="width: 50px; height: 50px;" alt="logo"></a></li>
-            <li><a href="#home">Home</a></li>
-            <li><a href="#degreeworks">Degreeworks</a></li>
-            <li><a href="#flowchart">Flowchart</a></li>
-            <li><a href="#advanced-search">Advanced Search</a></li>
-          </ul>
-          <ul>
-            <li>
-              <select>
-                <option value="en">English</option>
-                <option value="fr">Français</option>
-                <option value="de">Deutsch</option>
-                <option value="es">Español</option>
-              </select>
-            </li>
-            <li><i class=""></i></li>
-            <li><i class="fas fa-envelope"></i></li>
-            <li><i class="fas fa-comment"></i></li>
-            <li><i class="fas fa-user"></i></li>
-          </ul>
-        </nav>
+        <div class="navbar">
+            <!-- Logo -->
+            <a href="index.html">
+              <img src="South-Florida-Bulls-Logo.png" style="width: 50px;" alt="Logo">
+            </a>
+            
+            <!-- Navbar items -->
+            <div class="nav_pages">
+              <a href="index.html">Home</a>
+              <a href="#">Degreeworks</a>
+              <a href="#">Flowchart</a>
+              <a href="#">Advanced Search</a>
+            </div>
+            <div class="dropdown">
+                <a href="#">Language</a>
+                <div class="dropdown-content">
+                  <a href="index.html" class="dropdown-item">English</a>
+                  <a href="index.html" class="dropdown-item">French</a>
+                  <a href="index.html" class="dropdown-item">German</a>
+                  <a href="index.html" class="dropdown-item">Spanish</a>
+                </div>
+              </div>
       </header>
       
     <main>
