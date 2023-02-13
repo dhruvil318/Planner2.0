@@ -5,21 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flowchart</title>
-    <link rel="stylesheet" href="styles1.css" id="css-file">
+    <link rel="stylesheet" href="main.css" id="css-file">
     <script src="script.js"></script>
 </head>
 <body>
     <!-- same header and footer as index page, just change <main> content -->
-    <header>
-        <nav>
-            <a href="index.html"><img src="usflogo.png" id="usf-logo"></a>
-            <a href="index.html">Home</a>
-            <a href="flowchart.html">Flowchart</a>
-            <a href="https://www.usf.edu/">USF Home</a>
-            <a href="https://www.ratemyprofessors.com/school?sid=1262">Rate My Professor</a>
-            <button id="btn" type="button">Toggle Style</button>            
-        </nav>
-    </header>
+        <header>
+            <nav>
+                <!-- Logo -->
+                <a href="index.html">
+                  <img src="South-Florida-Bulls-Logo.png" style="width: 50px;" alt="Logo">
+                </a>
+                
+                <!-- Navbar items -->
+                <div class="nav_pages">
+                  <a href="index.html">Home</a>
+                  <a href="flowchart.html">Flowchart</a>
+                  <a href="https://www.usf.edu/" target="_blank">USF</a>
+                  <a href="https://www.ratemyprofessors.com/school?sid=1262" target="_blank"  >Rate My Professor</a>
+                </div>
+                <button id="btn" type="button" onclick="toggleCSS()">Toggle Style</button>
+                <div class="dropdown">
+                    <a href="#">Language</a>
+                    <div class="dropdown-content">
+                      <a href="index.html" class="dropdown-item">English</a>
+                      <a href="index.html" class="dropdown-item">French</a>
+                      <a href="index.html" class="dropdown-item">German</a>
+                      <a href="index.html" class="dropdown-item">Spanish</a>
+                    </div>
+                  </div>
+            </nav>
+          </header>
     <main>
         <!-- example flowchart. use real one from HCI project -->
         <img src="tempflowchart.png" alt="Example Flowchart for IT Degree at USF">
