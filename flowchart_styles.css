@@ -1,0 +1,194 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans", sans-serif;
+  }
+  
+  nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #005432;
+  color: white;
+  padding: 20px;
+  }
+
+  nav a {
+  color: white;
+  text-decoration: none;
+  margin-right: 20px;
+  }
+  
+  nav a:hover {
+  text-decoration: underline;
+  }
+  
+  .nav_pages {
+  display: flex;
+  justify-content: flex-start;
+  }
+  
+  .dropdown {
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+  }
+  
+  .dropdown-toggle {
+    border: 2px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #005432;
+    display: block;
+    padding: 5px 10px;
+  }
+  
+  .dropdown-toggle:hover {
+    background-color: #fff;
+    color: #005432;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    border-radius: 5px;
+    background-color: #005432;
+  }
+  
+  .dropdown-menu a {
+    color: #fff;
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #f9f9f9;
+    color: #005432;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  
+
+  #usf-logo {
+  width: 150px;
+  }
+  
+  main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 20px;
+  padding: 20px;
+  }
+  
+  #welcome {
+  font-size: 2em;
+  text-align: center;
+  }
+  
+  #classlist {
+  background-color: #f9f9f9;
+  padding: 20px;
+  }
+  
+  #classlist h1 {
+  margin-top: 0;
+  }
+  
+  #classlist ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  }
+  
+  #classlist li {
+  margin-bottom: 10px;
+  }
+  
+  .schedule-table {
+    margin: 20px auto;
+    max-width: 800px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  table {
+    width: 100%;
+    table-layout: fixed;
+  }
+  
+  th, td {
+    padding: 10px;
+    text-align: center;
+    border: .23px solid #f9f9f9e7;
+    width: 20%;
+  }
+  
+  th {
+    background-color: #005432;
+    color: #fff;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .class1 {
+    background-color: #F44336;
+  }
+  
+  .class2 {
+    background-color: #2196F3;
+  }
+  
+  .class3 {
+    background-color: #4CAF50;
+  }
+  
+  .class4 {
+    background-color: #FFEB3B;
+  }
+  
+  .class5 {
+    background-color: #9C27B0;
+  }
+  
+  
+  #btn {
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: #005432;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  }
+  
+  #btn:hover {
+  background-color: white;
+  color: #005432;
+  }
+  
+  .toggle {
+  font-weight: bold;
+  color: #005432;
+  }
+  
+  @media only screen and (max-width: 600px) {
+  nav {
+  flex-direction: column;
+  align-items: flex-start;
+  }
+  
+  .nav_pages {
+  flex-direction: column;
+  }
+  
+  .nav_pages a {
+  margin-right: 0;
+  margin-bottom: 10px;
+  }
+  }
