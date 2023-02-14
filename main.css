@@ -2,104 +2,169 @@ body {
   margin: 0;
   padding: 0;
   font-family: "Open Sans", sans-serif;
-}
-
-nav {
+  }
+  
+  nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 60px;
-  padding: 0 20px;
   background-color: #005432;
-  color: #fff;
-}
+  color: white;
+  padding: 20px;
+  }
 
-.nav_pages>a {
-  color: #fff;
-}
-
-.nav_pages>a:hover {
-  background-color: #00673e;
-}
-
-/* Navbar items */
-.navbar a {
-  color: #fff;
+  nav a {
+  color: white;
   text-decoration: none;
   margin-right: 20px;
-}
+  }
+  
+  nav a:hover {
+  text-decoration: underline;
+  }
+  
+  .nav_pages {
+  display: flex;
+  justify-content: flex-start;
+  }
+  
+  .dropdown {
+    display: inline-block;
+    position: relative;
+    margin-left: 10px;
+  }
+  
+  .dropdown-toggle {
+    border: 2px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+    background-color: #005432;
+    display: block;
+    padding: 5px 10px;
+  }
+  
+  .dropdown-toggle:hover {
+    background-color: #fff;
+    color: #005432;
+  }
+  
+  .dropdown-menu {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    border-radius: 5px;
+    background-color: #005432;
+  }
+  
+  .dropdown-menu a {
+    color: #fff;
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+  }
+  
+  .dropdown-menu a:hover {
+    background-color: #f9f9f9;
+    color: #005432;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+  }
+  
+  
 
-/* Language dropdown */
-.dropdown {
-  position: relative;
-  display: inline-block;
-  margin-left: 20px;
-  border: 1px solid #fff;
-  border-radius: 4px;
-  padding: 4px 8px;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  z-index: 1;
-  background-color: #333;
-  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-  right: 0;
-  min-width: 160px;
-}
-
-.dropdown:hover .dropdown-content {
-  display: block;
-}
-
-.dropdown-item {
-  color: #333;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-}
-
-.dropdown-item:hover {
-  background-color: #4f4f4f;
-}
-
-/* Default icons */
-.icon {
-  margin-left: 20px;
-  fill: #fff;
-}
-
-
-#usf-logo {
+  #usf-logo {
   width: 150px;
-}
-
-.welcome {
-  font-family: Arial, Helvetica, sans-serif;
-  font-weight: bold;
+  }
+  
+  main {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-gap: 20px;
+  padding: 20px;
+  }
+  
+  #welcome {
+  font-size: 2em;
   text-align: center;
-  font-size: 20px;
-  animation: invis 3s ease-in-out normal;
-  /* keeps color set at 100% after animation ends */
-  animation-fill-mode: forwards;
-}
-
-@keyframes invis {
-  0% {
-    color: #005432
   }
-
-  100% {
-    /* fades to fully transparent instead of white*/
-    color: rgba(255, 255, 255, 0)
+  
+  #classlist {
+  background-color: #f9f9f9;
+  padding: 20px;
   }
-}
-
-#scheduletable {}
-
-#classlist {}
-
-#flowchart {
-  width: 200px;
-}
+  
+  #classlist h1 {
+  margin-top: 0;
+  }
+  
+  #classlist ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  }
+  
+  #classlist li {
+  margin-bottom: 10px;
+  }
+  
+  #scheduletable {
+  background-color: #f9f9f9;
+  padding: 20px;
+  }
+  
+  #scheduletable h1 {
+  margin-top: 0;
+  }
+  
+  table {
+  width: 100%;
+  }
+  
+  td {
+  padding: 10px;
+  text-align: center;
+  }
+  
+  th {
+  padding: 10px;
+  text-align: center;
+  background-color: #005432;
+  color: #fff;
+  }
+  
+  #btn {
+  border: 2px solid white;
+  border-radius: 10px;
+  background-color: #005432;
+  color: white;
+  padding: 10px;
+  cursor: pointer;
+  }
+  
+  #btn:hover {
+  background-color: white;
+  color: #005432;
+  }
+  
+  .toggle {
+  font-weight: bold;
+  color: #005432;
+  }
+  
+  @media only screen and (max-width: 600px) {
+  nav {
+  flex-direction: column;
+  align-items: flex-start;
+  }
+  
+  .nav_pages {
+  flex-direction: column;
+  }
+  
+  .nav_pages a {
+  margin-right: 0;
+  margin-bottom: 10px;
+  }
+  }
