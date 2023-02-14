@@ -118,19 +118,23 @@ body {
   
   table {
     width: 100%;
-    border-collapse: collapse;
+    table-layout: fixed;
   }
   
-  th,
-  td {
+  th, td {
     padding: 10px;
     text-align: center;
-    border: 1px solid #ccc;
+    border: .23px solid #f9f9f9e7;
+    width: 20%;
   }
   
   th {
     background-color: #005432;
     color: #fff;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #f2f2f2;
   }
   
   .class1 {
