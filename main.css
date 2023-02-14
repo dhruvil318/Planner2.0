@@ -109,30 +109,50 @@ body {
   margin-bottom: 10px;
   }
   
-  #scheduletable {
-  background-color: #f9f9f9;
-  padding: 20px;
-  }
-  
-  #scheduletable h1 {
-  margin-top: 0;
+  .schedule-table {
+    margin: 20px auto;
+    max-width: 800px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
   }
   
   table {
-  width: 100%;
+    width: 100%;
+    border-collapse: collapse;
   }
   
+  th,
   td {
-  padding: 10px;
-  text-align: center;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
   }
   
   th {
-  padding: 10px;
-  text-align: center;
-  background-color: #005432;
-  color: #fff;
+    background-color: #005432;
+    color: #fff;
   }
+  
+  .class1 {
+    background-color: #F44336;
+  }
+  
+  .class2 {
+    background-color: #2196F3;
+  }
+  
+  .class3 {
+    background-color: #4CAF50;
+  }
+  
+  .class4 {
+    background-color: #FFEB3B;
+  }
+  
+  .class5 {
+    background-color: #9C27B0;
+  }
+  
   
   #btn {
   border: 2px solid white;
