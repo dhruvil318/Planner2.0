@@ -9,3 +9,8 @@ function toggleCSS() {
         cssFile.setAttribute('href', 'main.css');
     }
 }
+
+function toggleDropdown() {
+    document.getElementById("dropdown-menu").classList.toggle("show");
+  }
+  

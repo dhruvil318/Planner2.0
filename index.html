@@ -26,14 +26,16 @@
             </div>
             <button id="btn" type="button" onclick="toggleCSS()">Toggle Style</button>
             <div class="dropdown">
-                Language
-                <div class="dropdown-content">
-                  <a href="index.html" class="dropdown-item">English</a>
-                  <a href="index.html" class="dropdown-item">French</a>
-                  <a href="index.html" class="dropdown-item">German</a>
-                  <a href="index.html" class="dropdown-item">Spanish</a>
-                </div>
-              </div>
+                <div class="dropdown">
+                    <button class="dropdown-toggle" type="button" onclick="toggleDropdown()">Language</button>
+                    <div class="dropdown-menu" id="dropdown-menu">
+                      <a href="index.html" class="dropdown-item">English</a>
+                      <a href="index.html" class="dropdown-item">French</a>
+                      <a href="index.html" class="dropdown-item">German</a>
+                      <a href="index.html" class="dropdown-item">Spanish</a>
+                    </div>
+                  </div>
+                  
         </nav>
       </header>
       
