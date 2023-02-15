@@ -9,6 +9,16 @@ body {
     font-family: "Open Sans", sans-serif;
 }
 
+.flowchart-container {
+    margin: 30px;
+    text-align: center;
+}
+
+.flowchart-img {
+    height: 700px;
+    margin: auto;
+}
+
 nav {
     display: flex;
     justify-content: space-between;
@@ -109,7 +119,7 @@ nav a:hover {
     margin: 0px 20px;
 }
 
-.class-list h1 {
+.section-header {
     font-size: 30px;
     margin: 0px;
     text-align: center;
@@ -130,15 +140,6 @@ nav a:hover {
 .schedule-table {
     max-width: 800px;
     margin: 0px;
-}
-
-.schedule-table h1 {
-    font-size: 30px;
-    margin: 0px;
-    padding: 0px;
-    text-align: center;
-    color: var(--usf-green);
-    text-align: center;
 }
 
 .schedule-table h2 {

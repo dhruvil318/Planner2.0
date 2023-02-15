@@ -10,41 +10,45 @@
     <script src="script.js"></script>
 </head>
 <body>
-    <!-- same header and footer as index page, just change <main> content -->
-        <header>
-            <nav>
-                <!-- Logo -->
-                <a href="index.html">
-                  <img src="Assets\usflogo.png" alt="USF Logo" id="usf-logo">
-                </a>
-                
-                <!-- Navbar items -->
-                <div class="nav_pages">
-                  <a href="index.html">Home</a>
-                  <a href="flowchart.html">Flowchart</a>
-                  <a href="https://www.usf.edu/" target="_blank">USF</a>
-                  <a href="https://www.ratemyprofessors.com/school?sid=1262" target="_blank">Rate My Professor</a>
+  <header>
+    <nav>
+        <!-- Logo -->
+        <a href="index.html">
+          <img src="Assets/usflogo.png" alt="USF Planner 2.0 Logo" class="logo">
+        </a>
+        
+        <!-- Navbar items -->
+          <a href="index.html">Home</a>
+          <a href="flowchart.html">Flowchart</a>
+          <a href="https://www.usf.edu/" target="_blank">USF</a>
+          <a href="https://www.ratemyprofessors.com/school?sid=1262" target="_blank"  >Rate My Professor</a>
+
+        <div class="nav-buttons">
+          <button class="btn" type="button" onclick="toggleCSS()">Toggle Style</button>
+            <div class="dropdown">
+                <button class="btn" type="button" onclick="toggleDropdown()">Language</button>
+                <div class="dropdown-menu" id="dropdown-menu">
+                  <a href="index.html" class="dropdown-item">English</a>
+                  <a href="index.html" class="dropdown-item">Spanish</a>
+                  <a href="index.html" class="dropdown-item">French</a>
+                  <a href="index.html" class="dropdown-item">German</a>
                 </div>
-                <button id="btn" type="button" onclick="toggleCSS()">Toggle Style</button>
-                <div class="dropdown">
-                    <a href="#">Language</a>
-                    <div class="dropdown-content">
-                      <a href="index.html" class="dropdown-item">English</a>
-                      <a href="index.html" class="dropdown-item">French</a>
-                      <a href="index.html" class="dropdown-item">German</a>
-                      <a href="index.html" class="dropdown-item">Spanish</a>
-                    </div>
-                  </div>
-            </nav>
-          </header>
+              </div>
+        </div>
+        
+    </nav>
+</header>
     <main>
-        <!-- example flowchart. use real one from HCI project -->
-        <img src="Assets/flowchart.png" alt="Flowchart for IT Degree at USF" id="flowchart">
+      <div class="flowchart-container">
+        <h1 class="section-header">USF BS in Information Technology (B.S.I.T.)</h1>
+        <img src="Assets/flowchart.png" alt="Flowchart for IT Degree at USF" class="flowchart-img">
+      </div>  
+        
     </main>
     <footer>
-        <p>
-            <b>&copy; Presented by Dhruvil, Seth, Surya, and Aryan.</b>
-        </p>
+      <p>
+        &copy; 2023 Dhruvil Markana, Seth Michel, Surya Sundar &amp; Aryan Dagar
+      </p>
     </footer>
 </body>
 </html>
