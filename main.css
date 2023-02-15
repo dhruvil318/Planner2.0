@@ -1,3 +1,7 @@
+:root {
+  --usf-green: #005432;
+}
+
 body {
   margin: 0;
   padding: 0;
@@ -8,7 +12,7 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #005432;
+  background-color: var(--usf-green);
   color: white;
   padding: 20px;
 }
@@ -34,26 +38,26 @@ nav a:hover {
   margin-left: 10px;
 }
 
-.dropdown-toggle {
-  border: 2px solid #fff;
+.btn {
+  border: 2px solid white;
   border-radius: 20px;
-  color: #fff;
-  background-color: #005432;
-  display: block;
-  padding: 5px 10px;
+  background-color: var(--usf-green);
+  color: white;
+  padding: 7px;
+  cursor: pointer;
 }
 
-.dropdown-toggle:hover {
-  background-color: #fff;
-  color: #005432;
+.btn:hover {
+  background-color: white;
+  color: var(--usf-green);
 }
 
 .dropdown-menu {
   display: none;
   position: absolute;
   z-index: 1;
-  border-radius: 5px;
-  background-color: #005432;
+  border-radius: 10px;
+  background-color: var(--usf-green);
 }
 
 .dropdown-menu a {
@@ -61,18 +65,20 @@ nav a:hover {
   display: block;
   padding: 5px 10px;
   text-decoration: none;
+  border-radius: 10px;
 }
 
 .dropdown-menu a:hover {
   background-color: #f9f9f9;
-  color: #005432;
+  color: var(--usf-green);
+  width: 100%;
+  text-decoration: none;
+  border-radius: 10px;
 }
 
 .dropdown:hover .dropdown-menu {
   display: block;
 }
-
-
 
 #usf-logo {
   width: 150px;
@@ -81,8 +87,6 @@ nav a:hover {
 .list-and-table {
   display: flex;
 }
-
-
 
 .welcome-message p {
   margin: 0px;
@@ -132,7 +136,7 @@ td {
 }
 
 th {
-  background-color: #005432;
+  background-color: var(--usf-green);
   color: #fff;
 }
 
@@ -161,24 +165,7 @@ tr:nth-child(even) {
 }
 
 
-#btn {
-  border: 2px solid white;
-  border-radius: 10px;
-  background-color: #005432;
-  color: white;
-  padding: 10px;
-  cursor: pointer;
-}
 
-#btn:hover {
-  background-color: white;
-  color: #005432;
-}
-
-.toggle {
-  font-weight: bold;
-  color: #005432;
-}
 
 @media only screen and (max-width: 600px) {
   nav {
@@ -198,7 +185,7 @@ tr:nth-child(even) {
 
 footer {
   font-size: 12px;
-  background-color: #005432;
+  background-color: var(--usf-green);
   color: white;
 }
 
