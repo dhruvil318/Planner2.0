@@ -11,6 +11,7 @@ function toggleCSS() {
 }
 
 function toggleDropdown() {
-    document.getElementById("dropdown-menu").classList.toggle("show");
-  }
-  
+    // show dropdown when language button clicked
+    document.getElementByClass("dropdown-menu").classList.toggle("show");
+}
+

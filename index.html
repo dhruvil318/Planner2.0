@@ -14,18 +14,17 @@
         <nav>
             <!-- Logo -->
             <a href="index.html">
-              <img src="Assets/usflogo.png" alt="USF Logo" id="usf-logo">
+              <img src="Assets/usflogo.png" alt="USF Planner 2.0 Logo" class="logo">
             </a>
             
             <!-- Navbar items -->
-            <div class="nav_pages">
               <a href="index.html">Home</a>
               <a href="flowchart.html">Flowchart</a>
               <a href="https://www.usf.edu/" target="_blank">USF</a>
               <a href="https://www.ratemyprofessors.com/school?sid=1262" target="_blank"  >Rate My Professor</a>
-            </div>
-            <button class="btn" type="button" onclick="toggleCSS()">Toggle Style</button>
-            <div class="dropdown">
+
+            <div class="nav-buttons">
+              <button class="btn" type="button" onclick="toggleCSS()">Toggle Style</button>
                 <div class="dropdown">
                     <button class="btn" type="button" onclick="toggleDropdown()">Language</button>
                     <div class="dropdown-menu" id="dropdown-menu">
@@ -35,12 +34,14 @@
                       <a href="index.html" class="dropdown-item">German</a>
                     </div>
                   </div>
+            </div>
+            
         </nav>
     </header>
     
     <main> 
       <div class="welcome-message">
-        <p style="user-select: none;">Welcome to your schedule planner, Rocky.</p>
+        <p>Welcome to your schedule planner, Rocky.</p>
       </div>
 
       <div class="list-and-table">
@@ -55,15 +56,19 @@
         </div>
 
         <div class="schedule-table">
+          <h1>Schedule</h1>
           <table>
+            <caption>
+              <h2>Spring 2023</h2>
+            </caption>
             <thead>
               <tr>
                 <th></th>
-                <th>Monday</th>
-                <th>Tuesday</th>
-                <th>Wednesday</th>
-                <th>Thursday</th>
-                <th>Friday</th>
+                <th class="day-header">Monday</th>
+                <th class="day-header">Tuesday</th>
+                <th class="day-header">Wednesday</th>
+                <th class="day-header">Thursday</th>
+                <th class="day-header">Friday</th>
               </tr>
             </thead>
             <tbody>
@@ -103,11 +108,8 @@
                   <td>3:15 PM</td>
                   <td></td>
                   <td></td>
-
                   <td></td>
                 </tr>
-        
-              <!-- Add more rows for the remaining time slots -->
             </tbody>
           </table>
         </div>
