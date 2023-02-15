@@ -1,5 +1,6 @@
 :root {
   --usf-green: #005432;
+  --usf-gold: #CFC493;
 }
 
 body {
@@ -88,9 +89,27 @@ nav a:hover {
   display: flex;
 }
 
-.welcome-message p {
-  margin: 0px;
+.welcome-message {
   text-align: center;
+  margin: 5px;
+}
+
+.welcome-message p {
+  padding: 5px;
+  margin: 0px;
+  border-radius: 10px;
+  text-align: center;
+  font-weight: bold;
+  background-color: var(--usf-gold);
+  animation: fade 5s;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fade {
+  100% {
+    color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0);
+  }
 }
 
 .class-list {
