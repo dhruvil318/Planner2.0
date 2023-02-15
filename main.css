@@ -82,15 +82,7 @@ nav a:hover {
   display: flex;
 }
 
-footer {
-  font-size: 12px;
-  background-color: #005432;
-  color: white;
-  position: fixed;
-  bottom: 0px;
-  width: 100%;
-  padding-left: 10px;
-}
+
 
 .welcome-message p {
   margin: 0px;
@@ -202,4 +194,15 @@ tr:nth-child(even) {
     margin-right: 0;
     margin-bottom: 10px;
   }
+}
+
+footer {
+  font-size: 12px;
+  background-color: #005432;
+  color: white;
+}
+
+footer p {
+  padding: 10px;
+  margin: 0px;
 }
