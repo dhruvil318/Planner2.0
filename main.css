@@ -152,9 +152,6 @@ nav a:hover {
 table {
   width: 100%;
   table-layout: fixed;
-  color: white;
-  font-weight: bold;
-  text-align: center;
 }
 
 .day-header {
@@ -170,23 +167,29 @@ table {
   padding: 15px;
 }
 
-.cgs3853 {
+.class-block {
+  color: white;
+  font-weight: bold;
+  text-align: center;
+}
+
+#cgs3853 {
   background-color: #F44336;
 }
 
-.cis3433 {
+#cis3433 {
   background-color: #2196F3;
 }
 
-.cop4703 {
+#cop4703 {
   background-color: #4CAF50;
 }
 
-.enc1101 {
+#enc1101 {
   background-color: #e9a802;
 }
 
-.cop4935 {
+#cop4935 {
   background-color: #9C27B0;
 }
 
