@@ -1,86 +1,232 @@
-body {
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: green;
+:root {
+    --usf-green: #005432;
+    --usf-gold: #CFC493;
 }
 
-.navbar {
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Open Sans", sans-serif;
+}
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 60px;
-    padding: 0 20px;
-    background-color: #005432;
-    color: #fff;
+    background-color: var(--usf-green);
+    padding: 15px;
 }
 
-.nav_pages>a:hover {
-    background-color: #4f4f4f;
-}
-
-/* Navbar items */
-.navbar a {
-    color: #fff;
+nav a {
+    color: white;
     text-decoration: none;
-    margin-right: 20px;
+    font-weight: bold;
 }
 
-/* Language dropdown */
-.dropdown {
-    position: relative;
-    display: inline-block;
-    margin-left: 20px;
-    border: 1px solid #fff;
-    border-radius: 4px;
-    padding: 4px 8px;
+nav a:hover {
+    text-decoration: underline;
 }
 
-.dropdown-content {
+.logo {
+    width: 150px;
+}
+
+.btn {
+    border: 2px solid white;
+    border-radius: 20px;
+    background-color: var(--usf-green);
+    color: white;
+    padding: 7px;
+    cursor: pointer;
+    margin-left: 10px;
+}
+
+.btn:hover {
+    background-color: white;
+    color: var(--usf-green);
+}
+
+.nav-buttons {
+    display: flex;
+}
+
+.dropdown-menu {
     display: none;
     position: absolute;
-    z-index: 1;
-    background-color: #333;
-    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
-    right: 0;
-    min-width: 160px;
+    background-color: var(--usf-green);
+    border-radius: 5px;
+    text-align: center;
 }
 
-.dropdown:hover .dropdown-content {
+.dropdown-menu a {
+    color: #fff;
     display: block;
-}
-
-.dropdown-item {
-    color: #333;
-    padding: 12px 16px;
     text-decoration: none;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #f9f9f9;
+    color: var(--usf-green);
+    text-decoration: none;
+}
+
+.dropdown:hover .dropdown-menu {
     display: block;
 }
 
-.dropdown-item:hover {
-    background-color: #4f4f4f;
+.welcome-message {
+    text-align: center;
 }
 
-/* Default icons */
-.icon {
-    width: 20px;
-    height: 20px;
-    margin-left: 20px;
-    fill: #fff;
+.welcome-message p {
+    margin: 0px;
+    text-align: center;
+    font-weight: bold;
+    background-color: var(--usf-gold);
+    border-radius: 10px;
+    margin: 5px;
+    padding: 5px;
+    animation: fade 5s;
+    animation-fill-mode: forwards;
+    user-select: none;
 }
 
+@keyframes fade {
+    100% {
+        color: rgba(0, 0, 0, 0);
+        background-color: rgba(0, 0, 0, 0);
+    }
+}
 
-#usf-logo {
+.list-and-table {
+    display: flex;
+}
+
+.class-list {
     width: 200px;
+    margin: 0px 20px;
 }
 
-.welcome {
-    font-family: Arial, Helvetica, sans-serif;
+.class-list h1 {
+    font-size: 30px;
+    margin: 0px;
+    text-align: center;
+    color: var(--usf-green);
+}
+
+.class-list ul {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+.class-list li img {
+    width: 100%;
+    padding-bottom: 5px;
+}
+
+.schedule-table {
+    max-width: 800px;
+    margin: 0px;
+}
+
+.schedule-table h1 {
+    font-size: 30px;
+    margin: 0px;
+    padding: 0px;
+    text-align: center;
+    color: var(--usf-green);
+    text-align: center;
+}
+
+.schedule-table h2 {
+    color: rgb(81, 81, 81);
+    font-size: 18px;
+    margin: 0px;
+    text-align: center;
+    font-style: italic;
+}
+
+table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.day-header {
+    background-color: #1baa71;
+    color: #fff;
+    font-weight: bold;
+    padding: 7px;
+    border-radius: 7px;
+}
+
+.timing {
+    color: rgb(78, 78, 78);
+    font-weight: bold;
+    padding: 15px;
+    font-style: italic;
+}
+
+.class-block {
+    color: white;
     font-weight: bold;
     text-align: center;
-    font-size: 30px;
-    animation: invis 3s ease-in-out normal;
-  }
+    border-radius: 15px;
+}
+
+#cgs3853 {
+    border: 5px solid #F44336;
+    background-color: #fe8178;
+}
+
+#cis3433 {
+    border: 5px solid #2196F3;
+    background-color: #48a6f3;
+}
+
+#cop4703 {
+    border: 5px solid #4CAF50;
+    background-color: #78c67a;
+}
+
+#enc1101 {
+    border: 5px solid #e9a802;
+    background-color: #e4b84b;
+}
+
+#cop4935 {
+    border: 5px solid #9C27B0;
+    background-color: #c660d7;
+}
+
+footer {
+    font-size: 12px;
+    background-color: var(--usf-green);
+    color: white;
+}
+
+footer p {
+    padding: 10px;
+    margin: 0px;
+}
+
+/* removed for now if not needed
   
-  @keyframes invis{
-    0% {color:white}
-    100% {color:#005432}
-  }
+  @media only screen and (max-width: 600px) {
+    nav {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .nav-pages {
+      flex-direction: column;
+    }
+  
+    .nav-pages a {
+      margin-right: 0;
+      margin-bottom: 10px;
+    }
+  } 
+  */
