@@ -49,7 +49,8 @@
   
   .logo-link:hover .logo {
     opacity: 50%;
-    }
+    transition: opacity 0.2s ease-in-out;
+  }
       
   
   /* excludes logo from same styling as links */
@@ -57,10 +58,12 @@
     padding: 0px 10px;
     text-align: center;
   }
-  
+
   nav a:hover:not(.logo-link) {
-    text-decoration: underline;
+    transform: translateY(-3px);
+    transition: all 0.3s ease;
   }
+  
   
   .logo {
     width: 150px;
@@ -74,11 +77,25 @@
     padding: 7px;
     cursor: pointer;
     margin-left: 10px;
+    transition: all 0.3s ease-in-out;
+  }
+
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+    }
+    50% {
+      transform: scale(1.1);
+    }
+    100% {
+      transform: scale(1);
+    }
   }
   
   .btn:hover {
     background-color: var(--text-color);
     color: var(--bg-color);
+    animation: pulse 2s infinite;
   }
   
   .nav-buttons {
