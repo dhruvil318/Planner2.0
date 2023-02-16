@@ -1,121 +1,121 @@
 :root {
-    --usf-green: #04ad69;
-    --usf-gold: #ddcc74;
-}
-
-body {
+    --usf-green: #005432;
+    --usf-gold: #CFC493;
+    --bg-color: #212121;
+    --text-color: #ffffff;
+    --font-family: "Comic Sans MS", cursive;
+  }
+  
+  body {
     margin: 0;
     padding: 0;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    background-color: rgb(72, 71, 71);
-}
-
-.flowchart-container {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    background-color: var(--bg-color);
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  
+  .flowchart-container {
     margin: 30px;
     text-align: center;
-}
-
-.flowchart-img {
+  }
+  
+  .flowchart-img {
     height: 700px;
     margin: auto;
-}
-
-nav {
+  }
+  
+  nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: var(--usf-green);
+    background-color: var(--bg-color);
     padding: 15px;
-}
-
-nav a {
-    color: white;
+    border-bottom: 1px solid var(--usf-green);
+  }
+  
+  nav a {
+    color: var(--text-color);
     text-decoration: none;
-    font-size: 16px;
-    text-transform: uppercase;
-}
-
-.logo-and-items {
-    display: flex;
-    align-items: center;
-}
-
-.logo-link:hover .logo {
-    transform: scale(1.05);
-    transition: transform 0.2s ease-in-out;
-    }
-
-.logo-and-items a {
-    text-align: center;
-    padding: 0px 20px;
-}
-
-/* excludes logo from same styling as links */
-nav a:hover:not(.logo-link) {
-    background-color: white;
-    color: var(--usf-green);
-    border-radius: 10px;
-    padding: 10px 20px;
-}
-
-.logo {
-    width: 150px;
-}
-
-
-.btn {
-    border: 2px solid var(--usf-green);
-    border-radius: 20px;
-    background-color: white;
-    color: var(--usf-green);
     font-weight: bold;
+  }
+  
+  .logo-and-items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo-link:hover .logo {
+    opacity: 50%;
+    }
+      
+  
+  /* excludes logo from same styling as links */
+  .logo-and-items a:not(.logo-link) {
+    padding: 0px 10px;
+    text-align: center;
+  }
+  
+  nav a:hover:not(.logo-link) {
+    text-decoration: underline;
+  }
+  
+  .logo {
+    width: 150px;
+  }
+  
+  .btn {
+    border: 2px solid var(--text-color);
+    border-radius: 20px;
+    background-color: var(--bg-color);
+    color: var(--text-color);
     padding: 7px;
     cursor: pointer;
     margin-left: 10px;
-}
-
-.btn:hover {
-    border: 2px solid var(--usf-gold);
-}
-
-.nav-buttons {
+  }
+  
+  .btn:hover {
+    background-color: var(--text-color);
+    color: var(--bg-color);
+  }
+  
+  .nav-buttons {
     display: flex;
-    padding: 0px 10px;
-    align-items: center;
-}
-
-.dropdown-menu {
+  }
+  
+  .dropdown-menu {
     display: none;
     position: absolute;
-    background-color: var(--usf-green);
+    background-color: var(--bg-color);
     border-radius: 5px;
     text-align: center;
-}
-
-.dropdown-menu a {
-    color: #fff;
+  }
+  
+  .dropdown-menu a {
+    color: var(--text-color);
     display: block;
     text-decoration: none;
     border-radius: 5px;
     padding: 5px;
-}
-
-.dropdown-menu a:hover {
+  }
+  
+  .dropdown-menu a:hover {
     background-color: #f9f9f9;
-    color: var(--usf-green);
+    color: var(--bg-color);
     text-decoration: none;
-}
-
-
-.dropdown:hover .dropdown-menu {
+  }
+  
+  .dropdown:hover .dropdown-menu {
     display: block;
-}
-
-.welcome-message {
+  }
+  
+  .welcome-message {
     text-align: center;
-}
-
-.welcome-message p {
+  }
+  
+  .welcome-message p {
     margin: 0px;
     text-align: center;
     font-weight: bold;
@@ -126,25 +126,25 @@ nav a:hover:not(.logo-link) {
     animation: fade 5s;
     animation-fill-mode: forwards;
     user-select: none;
-}
-
-@keyframes fade {
+  }
+  
+  @keyframes fade {
     100% {
-        color: rgba(0, 0, 0, 0);
-        background-color: rgba(0, 0, 0, 0);
+      color: rgba(0, 0, 0, 0);
+      background-color: rgba(0, 0, 0, 0);
     }
-}
-
-.list-and-table {
+  }
+  
+  .list-and-table {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 30px;
-}
-
-.class-list {
+    margin-bottom: 35px;
+  }
+  
+  .class-list {
     width: 200px;
     margin: 0px 20px;
-}
+  }
 
 .section-header {
     font-size: 30px;
