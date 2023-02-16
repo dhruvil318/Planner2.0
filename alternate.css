@@ -1,12 +1,12 @@
 :root {
     --usf-green: #04ad69;
-    --usf-gold: #e4d9a4;
+    --usf-gold: #ddcc74;
 }
 
 body {
     margin: 0;
     padding: 0;
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     background-color: rgb(72, 71, 71);
 }
 
@@ -31,44 +31,53 @@ nav {
 nav a {
     color: white;
     text-decoration: none;
-    font-weight: bold;
+    font-size: 16px;
+    text-transform: uppercase;
 }
 
 .logo-and-items {
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
+
 .logo-and-items a {
-    padding-right: 20px;
+    text-align: center;
+    padding: 0px 20px;
 }
 
-nav a:hover {
-    text-decoration: underline;
+/* excludes logo from same styling as links */
+nav a:hover:not(.logo-link) {
+    background-color: white;
+    color: var(--usf-green);
+    border-radius: 10px;
+    padding: 10px 20px;
 }
 
 .logo {
     width: 150px;
 }
 
+
 .btn {
-    border: 2px solid white;
+    border: 2px solid var(--usf-green);
     border-radius: 20px;
-    background-color: var(--usf-green);
-    color: white;
+    background-color: white;
+    color: var(--usf-green);
+    font-weight: bold;
     padding: 7px;
     cursor: pointer;
     margin-left: 10px;
 }
 
 .btn:hover {
-    background-color: white;
-    color: var(--usf-green);
+    border: 2px solid var(--usf-gold);
 }
 
 .nav-buttons {
     display: flex;
+    padding: 0px 10px;
+    align-items: center;
 }
 
 .dropdown-menu {
@@ -92,6 +101,7 @@ nav a:hover {
     color: var(--usf-green);
     text-decoration: none;
 }
+
 
 .dropdown:hover .dropdown-menu {
     display: block;
@@ -124,7 +134,7 @@ nav a:hover {
 .list-and-table {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 35px;
+    margin-bottom: 30px;
 }
 
 .class-list {
@@ -137,6 +147,8 @@ nav a:hover {
     margin: 0px;
     text-align: center;
     color: var(--usf-green);
+    text-transform: uppercase;
+
 }
 
 .class-list ul {
@@ -147,7 +159,7 @@ nav a:hover {
 
 .class-list li img {
     width: 100%;
-    padding-bottom: 5px;
+    padding-bottom: 10px;
 }
 
 .schedule-table {
@@ -160,7 +172,6 @@ nav a:hover {
     font-size: 18px;
     margin: 0px;
     text-align: center;
-    font-style: italic;
 }
 
 table {
@@ -224,6 +235,8 @@ footer {
 footer p {
     padding: 10px;
     margin: 0px;
+    font-style: italic;
+    font-weight: normal;
 }
 
 /* removed for now if not needed

@@ -39,11 +39,13 @@ nav a {
   align-items: center;
 }
 
-.logo-and-items a {
-  padding-right: 20px;
+/* excludes logo from same styling as links */
+.logo-and-items a:not(.logo-link) {
+  padding: 0px 10px;
+  text-align: center;
 }
 
-nav a:hover {
+nav a:hover:not(.logo-link) {
   text-decoration: underline;
 }
 
