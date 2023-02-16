@@ -261,7 +261,7 @@ footer p {
     font-weight: normal;
 }
 
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 768px) {
   nav {
   flex-direction: column;
   align-items: flex-start;
@@ -285,12 +285,10 @@ footer p {
   td {
     padding: 5px;
   }
-  }
 
-  @media screen and (max-width: 768px) {
-    .flowchart-img {
-      height: auto;
-      max-width: 100%;
-      min-width: 450px;
-    }
+  .flowchart-img {
+    height: auto;
+    max-width: 100%;
+    min-width: 450px;
+  }
   }
