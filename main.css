@@ -39,6 +39,12 @@ nav a {
   align-items: center;
 }
 
+.logo-link:hover .logo {
+  transform: scale(1.05);
+  transition: transform 0.2s ease-in-out;
+  }
+    
+
 /* excludes logo from same styling as links */
 .logo-and-items a:not(.logo-link) {
   padding: 0px 10px;
