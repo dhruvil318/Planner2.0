@@ -40,6 +40,10 @@ nav a {
     align-items: center;
 }
 
+.logo-link:hover .logo {
+    transform: scale(1.05);
+    transition: transform 0.2s ease-in-out;
+    }
 
 .logo-and-items a {
     text-align: center;
