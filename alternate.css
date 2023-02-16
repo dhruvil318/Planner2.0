@@ -3,7 +3,7 @@
     --usf-gold: #CFC493;
     --bg-color: #212121;
     --text-color: #ffffff;
-    --font-family: "Comic Sans MS", cursive;
+    --font-family: "Garamond","Playfair Display", serif;;
   }
   
   body {
@@ -70,6 +70,7 @@
   }
   
   .btn {
+    font-family: var(--font-family);
     border: 2px solid var(--text-color);
     border-radius: 20px;
     background-color: var(--bg-color);
