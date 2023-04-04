@@ -42,8 +42,8 @@ nav a {
 .logo-link:hover .logo {
   transform: scale(1.05);
   transition: transform 0.2s ease-in-out;
-  }
-    
+}
+
 
 /* excludes logo from same styling as links */
 .logo-and-items a:not(.logo-link) {
@@ -184,7 +184,7 @@ table {
 
 .timing {
   color: black;
-  font-weight: normal;
+  font-weight: bold;
   padding: 15px;
 }
 
@@ -227,24 +227,26 @@ footer p {
 
 @media only screen and (max-width: 768px) {
   nav {
-  flex-direction: column;
-  align-items: flex-start;
+    flex-direction: column;
+    align-items: flex-start;
   }
-  
+
   .nav-pages {
-  flex-direction: column;
+    flex-direction: column;
   }
-  
+
   .nav-pages a {
-  margin-right: 0;
-  margin-bottom: 10px;
-  }  table {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+
+  table {
     table-layout: auto;
     font-size: 12px;
     padding: 10px;
     max-width: 100%;
   }
-  
+
   th,
   td {
     padding: 5px;
@@ -255,4 +257,4 @@ footer p {
     max-width: 100%;
     min-width: 450px;
   }
-  }
+}
