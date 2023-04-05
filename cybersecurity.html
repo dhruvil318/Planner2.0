@@ -6,6 +6,101 @@
   <title>Cybersecurity Department</title>
   <!-- Link to Bootstrap CSS library  -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    /* Add USF colors */
+    :root {
+      --primary-color: #006747;
+      --secondary-color: #CFC493;
+      --light-color: #FFFFFF;
+      --dark-color: #EDEBD1;
+      --success-color: #005432;
+      --warning-color: #DBE442;
+      --info-color: #9CCB3B;
+      --danger-color: #009374;
+      --light-gray-color: #CAD2D8;
+      --dark-gray-color: #7E96A0;
+      --dark-blue-color: #466069;
+    }
+    .navbar {
+    background-color: #005432;
+  }
+    /* Update navbar colors */
+    .navbar-light .navbar-brand {
+      color: var(--primary-color);
+    }
+    .navbar-light .navbar-nav .nav-link {
+      color: var(--dark-gray-color);
+    }
+    .navbar-light .navbar-nav .nav-link:hover {
+      color: var(--primary-color);
+    }
+
+    /* Update table colors */
+    table.table thead {
+      background-color: var(--primary-color);
+      color: var(--light-color);
+    }
+    table.table tbody tr:nth-of-type(odd) {
+      background-color: var(--light-gray-color);
+    }
+    table.table tbody tr:nth-of-type(even) {
+      background-color: var(--dark-gray-color);
+    }
+    table.table tbody tr:hover {
+      background-color: var(--secondary-color);
+      color: var(--dark-color);
+    }
+
+    /* Update carousel controls */
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+      background-color: var(--dark-blue-color);
+    }
+    .carousel-control-prev,
+    .carousel-control-next {
+      width: 5%;
+    }
+    .carousel-indicators li {
+      background-color: var(--dark-gray-color);
+    }
+    .carousel-indicators li.active {
+      background-color: var(--primary-color);
+    }
+
+    /* Update button colors */
+    .btn-primary {
+      background-color: var(--primary-color);
+      border-color: var(--primary-color);
+    }
+    .btn-primary:hover {
+      background-color: var(--secondary-color);
+      border-color: var(--secondary-color);
+    }
+    .btn-success {
+      background-color: var(--success-color);
+      border-color: var(--success-color);
+    }
+    .btn-success:hover {
+      background-color: var(--warning-color);
+      border-color: var(--warning-color);
+    }
+    .btn-info {
+      background-color: var(--info-color);
+      border-color: var(--info-color);
+    }
+    .btn-info:hover {
+      background-color: var(--dark-gray-color);
+      border-color: var(--dark-gray-color);
+    }
+    .btn-danger {
+      background-color: var(--danger-color);
+      border-color: var(--danger-color);
+    }
+    .btn-danger:hover {
+      background-color: var(--light-gray-color);
+      border-color: var(--light-gray-color);
+    }
+  </style>
 </head>
 <body>
   <nav class="navbar navbar-expand-md navbar-light bg-light">
