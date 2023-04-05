@@ -51,8 +51,14 @@
     /* Update carousel controls */
     .carousel-control-prev-icon,
     .carousel-control-next-icon {
-      background-color: var(--dark-blue-color);
+    transition: transform 0.2s ease-in-out; /* Add a smooth transition */
     }
+
+    .carousel-control-prev:hover .carousel-control-prev-icon,
+    .carousel-control-next:hover .carousel-control-next-icon {
+    transform: scale(1.2); /* Scale the icon up by 20% on hover */
+    }
+
     .carousel-control-prev,
     .carousel-control-next {
       width: 5%;
